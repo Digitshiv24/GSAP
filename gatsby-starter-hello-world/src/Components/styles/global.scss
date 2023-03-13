@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+html, body {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    min-height: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Abril Fatface", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  
+  h1 {
+    font-size: 9vw;
+    line-height: 1;
+    margin-top: 0;
+  }
+  #subheading{
+    color: red;
+  }
+  
+  #bg {
+    /* Set the z-index to -1 so that the element appears behind other content */
+    z-index: -1;
+    
+    /* Set the position to fixed so that the element stays in place even when scrolling */
+    position: fixed;
+    
+    /* Set the top and left positions to 0 to position the element in the top-left corner */
+    top: 0;
+    left: 0;
+    
+    /* Set the width and height of the element to cover the entire screen */
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  #bg img{    
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    max-width: 900px;
+
+    /* Apply a filter effect to the background image */
+    filter: brightness(60%) contrast(110%) saturate(120%) sepia(10%);
+  
+  @media (max-width: 768px) {
+    /* Adjust the background position on smaller screens */
+    #bg {
+      background-position: center top;
+    }
+  }
+}

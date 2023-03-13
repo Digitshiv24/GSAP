@@ -1,0 +1,87 @@
+.Animation {
+  color: #fff;
+  height: 100%;
+  background: #0f0808;
+  line-height: 1.5;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  position: sticky;
+}
+
+
+.contain {
+  min-height: 100vh;
+  margin: 1rem auto;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.contain {
+  margin: 0 10%;
+}
+
+
+.hero{
+  width: 80%;
+  float: left;
+  margin-block: 2rem;
+
+}
+
+.category {
+  font-size: 18px;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-top: 30px;
+}
+
+.category:after {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #fff;
+  margin-left: 5px;
+}
+
+.category.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.description {
+  letter-spacing: 1px;
+  width: 100%;
+  float: left;
+  margin-bottom: 1rem;
+}
+
+.description p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+}
+.Image-First {
+  width: 80%;
+  float: left;
+  margin-right: 50%;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1280px) {
+  .description {
+    width: 50%;
+  }
+}
+
+  .Image-First {
+    width: 100%;
+    padding-bottom: 20px;
+  }
